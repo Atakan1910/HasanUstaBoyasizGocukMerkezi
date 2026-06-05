@@ -59,13 +59,7 @@ document.addEventListener('DOMContentLoaded', () => {
             portfolioCar3: 'Audi A5',
             portfolioCar4: 'BYD Atto 3',
             portfolioCar5: 'Togg T10X',
-            testimonialsTitle: 'Müşteri Yorumları',
-            testimonial1Text: '"Hasan Usta ekibi aracımın göçüğünü boyasız bir şekilde kusursuz düzeltti. Çok memnun kaldım, kesinlikle tavsiye ederim!"',
-            testimonial1Name: '- Ayşe Yılmaz',
-            testimonial2Text: '"Hızlı ve profesyonel hizmet. Arabam sanki hiç hasar almamış gibi oldu. Teşekkürler Hasan Usta!"',
-            testimonial2Name: '- Mehmet Demir',
-            testimonial3Text: '"Göçük düzeltmede tek adresim artık. Orijinal boyayı korumaları harika."',
-            testimonial3Name: '- Zeynep Kaya',
+
             contactTitle: 'İletişim',
             contactInfoTitle: 'Bize Ulaşın',
             address: 'Ozan Otonom, Plevne, Çatalca Sokağı No:14/44 Sincan/Ankara',
@@ -121,13 +115,7 @@ document.addEventListener('DOMContentLoaded', () => {
             portfolioCar3: 'Audi A5',
             portfolioCar4: 'BYD Atto 3',
             portfolioCar5: 'Togg T10X',
-            testimonialsTitle: 'Customer Testimonials',
-            testimonial1Text: '"Hasan Usta\'s team perfectly repaired my car\'s dent without painting. I am very satisfied, I definitely recommend it!"',
-            testimonial1Name: '- Ayşe Yılmaz',
-            testimonial2Text: '"Fast and professional service. My car looks like it was never damaged. Thanks, Hasan Usta!"',
-            testimonial2Name: '- Mehmet Demir',
-            testimonial3Text: '"My only address for dent repair now. It\'s great that they preserve the original paint."',
-            testimonial3Name: '- Zeynep Kaya',
+
             contactTitle: 'Contact',
             contactInfoTitle: 'Reach Us',
             address: 'Ozan Otonom, Plevne, Çatalca Street Number:14/44 Sincan/Ankara',
@@ -183,32 +171,6 @@ document.addEventListener('DOMContentLoaded', () => {
         duration: 1000,
         once: true,
     });
-    // Testimonial Carousel
-    const testimonialCarousel = document.querySelector('.testimonial-carousel');
-    const carouselPrev = document.querySelector('.carousel-prev');
-    const carouselNext = document.querySelector('.carousel-next');
-    const testimonialItems = document.querySelectorAll('.testimonial-item');
-    let currentIndex = 0;
-    const updateCarousel = () => {
-        testimonialCarousel.style.transform = `translateX(${-currentIndex * 100}%)`;
-    };
-    if (carouselPrev) {
-        carouselPrev.addEventListener('click', () => {
-            currentIndex = (currentIndex > 0) ? currentIndex - 1 : testimonialItems.length - 1;
-            updateCarousel();
-        });
-    }
-    if (carouselNext) {
-        carouselNext.addEventListener('click', () => {
-            currentIndex = (currentIndex < testimonialItems.length - 1) ? currentIndex + 1 : 0;
-            updateCarousel();
-        });
-    }
-    // Apply initial transform for smooth transition setup
-    if (testimonialCarousel) {
-        testimonialCarousel.style.transition = 'transform 0.5s ease-in-out';
-    }
-
     // --- TEMA DEĞİŞTİRİCİ (DARK / LIGHT MODE) ---
     const themeToggleBtn = document.getElementById('theme-toggle');
     const themeIcon = themeToggleBtn.querySelector('i');
