@@ -382,61 +382,6 @@ body.light-mode .service-item {
     font-size: 1em;
     color: var(--color-text-dark);
 }
-/* Testimonials Section */
-.testimonial-carousel {
-    display: flex;
-    overflow: hidden; 
-    position: relative;
-    max-width: 900px;
-    margin: 0 auto 30px auto;
-    border-radius: 8px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4);
-    border: 1px solid var(--color-border);
-    transition: background-color 0.3s ease;
-}
-body.light-mode .testimonial-carousel {
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-}
-.testimonial-item {
-    min-width: 100%; 
-    padding: 40px;
-    text-align: center;
-    background-color: var(--color-secondary-bg);
-    flex-shrink: 0;
-}
-.testimonial-item .stars {
-    color: gold;
-    margin-bottom: 20px;
-    font-size: 1.2em;
-}
-.testimonial-item p {
-    font-style: italic;
-    font-size: 1.1em;
-    color: var(--color-text-light);
-    margin-bottom: 20px;
-}
-.testimonial-item .customer-name {
-    font-weight: 600;
-    color: var(--color-accent);
-}
-.carousel-nav {
-    text-align: center;
-}
-.carousel-nav button {
-    background-color: var(--color-accent);
-    color: var(--color-text-light);
-    border: none;
-    padding: 10px 15px;
-    margin: 0 10px;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 1.2em;
-    transition: background-color 0.3s ease, transform 0.2s ease;
-}
-.carousel-nav button:hover {
-    background-color: darken(var(--color-accent), 10%); 
-    transform: scale(1.05);
-}
 /* Footer/Contact Section */
 .footer-section {
     background-color: var(--color-secondary-bg);
@@ -725,12 +670,6 @@ body.light-mode .before-badge {
     }
     .service-icon {
         font-size: 3em;
-    }
-    .testimonial-item {
-        padding: 30px 20px;
-    }
-    .testimonial-item p {
-        font-size: 1em;
     }
     .contact-info,
     .contact-form-container,
